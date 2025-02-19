@@ -14,47 +14,48 @@
 </head>
 {% block content %}
 <body>
-   <div id="smooth-wrapper">
-      <div id="smooth-content">
-         <section id="home" class="grid place-content-center h-screen bg-fixed" style="background-image: url(./Pics/Industry/01-blur.jpg);">
-              <div class="gap-5 p-0">
-                 <div class="grid px-5 pt-5 place-content-center introtext">
-                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
-                       <path d="M77.705 96H147V8m5 131v48h143l-26-32h-83l47-47-19-24h-62l29 24m-34-7H73.765l-6.356 8H147m-89.791 13H147v-8H63.469M6 187h141v-60H53.269" />
-                    </svg>
-                 </div>
-                 <div class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black big-shoulders-text tracking-tighter introtext break-normal uppercase text-white">The Chemical Engineering Symposium</div>
-              </div>
-         </section>
-         <svg style="position: absolute; width: 0; height: 0;">
-              <defs>
-                 <filter id="blurFilter">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur>
-                 </filter>
-              </defs>
-         </svg>
-         <section id="about" class="py-32 lg:mx-28">
-              <svg class="hidden">
-                 <defs>
-                    <filter id="goo-1">
-                       <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"></feGaussianBlur>
-                       <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  
-                          0 1 0 0 0  
-                          1 0 1 0 0  
-                          0 0 0 13 -6" result="goo"></feColorMatrix>
-                       <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-                    </filter>
-                 </defs>
-              </svg>
-              <h2 data-filter="goo-1" class="size-large end font-1 text-left  instrument-serif-regular tracking-tight blur-element subpixel-antialiased text-6xl md:text-9xl mb-20 mx-5 sm:mx-10">About Us</h2>
-              <div class="grid grid-cols-1 lg:grid-cols-3 mb-10 mx-5 gap-5">
-                 <div class="grid lg:row-span-2 rounded-xl blur-element place-items-center">
-                    <video width="480" height="270"  autoplay muted loop class="rounded-xl">
-                       <source src="Videos/AZeotropy 2024-25 480p ffmpeg.mp4" type="video/mp4">
-                    </video>
-                 </div>
-                 <div data-filter="goo-1" data-script="filter1" class="lg:col-span-2 text-left text-xl md:text-5xl tracking-wide blur-element jost">About AZeotropy</div>
-                 <div class="container lg:col-span-2 text-justify blur-element font-semibold">
+<div id="smooth-wrapper">
+   <div id="smooth-content">
+      <section id="home" class="grid place-content-center h-screen bg-fixed">
+         <div class="gap-5 p-0">
+            <div class="grid px-5 pt-5 place-content-center introtext">
+               <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
+                  <path d="M77.705 96H147V8m5 131v48h143l-26-32h-83l47-47-19-24h-62l29 24m-34-7H73.765l-6.356 8H147m-89.791 13H147v-8H63.469M6 187h141v-60H53.269" />
+               </svg>
+            </div>
+            <div class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black big-shoulders-text tracking-tighter introtext break-normal uppercase text-white">The Chemical Engineering Symposium</div>
+            </div>
+      </section>
+      <svg style="position: absolute; width: 0; height: 0;">
+         <defs>
+            <filter id="blurFilter">
+               <feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur>
+            </filter>
+         </defs>
+      </svg>
+      <section id="about" class="py-32 lg:mx-28">
+      <svg class="hidden">
+         <defs>
+            <filter id="goo-1">
+               <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"></feGaussianBlur>
+               <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  
+                  0 1 0 0 0  
+                  1 0 1 0 0  
+                  0 0 0 13 -6" result="goo"></feColorMatrix>
+               <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+            </filter>
+         </defs>
+      </svg>
+      <h2 data-filter="goo-1" class="size-large end font-1 text-left  instrument-serif-regular tracking-tight blur-element subpixel-antialiased text-6xl md:text-9xl mb-20 mx-5 sm:mx-10">About Us</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 mb-10 mx-5 gap-5">
+         <div class="grid lg:row-span-2 rounded-xl blur-element place-items-center">
+            <video width="480" height="270"  autoplay muted loop class="rounded-xl">
+               <source src="Videos/AZeotropy 2024-25 480p ffmpeg.mp4" type="video/mp4">
+            </video>
+         </div>
+      </div>
+         <div data-filter="goo-1" data-script="filter1" class="lg:col-span-2 text-left text-xl md:text-5xl tracking-wide blur-element jost">About AZeotropy</div>
+               <div class="container lg:col-span-2 text-justify blur-element font-semibold">
                     <p class=" text-base leading-relaxed mb-4 blur-element " >AZeotropy, India's largest Chemical Engineering Symposium, is a unique blend of intriguing competitions, lecture series, panel discussions, exhibitions, workshops, and other learning-related activities. As a non-profit organization, we aim to bridge the gap between students, industry, and academia.</p>
                     <p class=" text-base leading-relaxed mb-4 blur-element" >Our mission is to manifest the spirit of Chemical Engineering in young students from all corners of India. We encourage participation from over 350 colleges, 50+ industrialists, and welcome an average footfall of 12,000 attendees.</p>
                     <p class=" text-base leading-relaxed blur-element" >The symposium has hosted lectures by eminent personalities, including Gerald Fuller, Professor of Chemical Engineering at Stanford University, Douglas Buttrey, Professor at the Department of Chemical & Biomolecular Engineering, University of Delaware, Abraham D. Stroock, Cornell University, and Harsha Bhogle, Indian cricket commentator and journalist and more.</p>
@@ -189,6 +190,7 @@
          </section>
       </div>
    </div>
+<script src="{% static 'js/script.js' %}" defer></script>
 </body>
 {% endblock %}
 </html>

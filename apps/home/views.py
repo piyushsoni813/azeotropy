@@ -8,3 +8,18 @@ def home(request):
 
 def footer(request):
     return render(request, 'main/footer.html')  # Use relative path
+
+def competitions(request):
+    return render(request, 'competition/competitions.html')  # Use relative path
+
+def events(request):
+    return render(request, 'events/event.html')  # Use relative path
+
+def workshop(request):
+    return render(request, 'workshop/workshops.html')  # Use relative path
+
+def team(request):
+    return render(request, 'team/team.html')  # Use relative path
+
+def sponsor(request):
+    return render(request, 'sponsor/sponsor.html')  # Use relative path
