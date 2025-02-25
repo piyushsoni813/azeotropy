@@ -22,4 +22,4 @@ def team(request):
     return render(request, 'team/team.html')  # Use relative path
 
 def sponsor(request):
-    return render(request, 'sponsor/sponsor.html')  # Use relative path
+    return render(request, 'sponsors/sponsor.html')  # Use relative path
