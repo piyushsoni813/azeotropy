@@ -348,6 +348,7 @@ input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
   -webkit-appearance: button;
+  appearance: button;
   /* 1 */
   background-color: transparent;
   /* 2 */
@@ -395,6 +396,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 
 [type='search'] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -534,8 +536,6 @@ embed,
 object {
   display: block;
   /* 1 */
-  vertical-align: middle;
-  /* 2 */
 }
 
 /*
@@ -4092,4 +4092,48 @@ section:nth-child(3) {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+}
+
+#home {
+  background-image: url("../pics/01-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; /* Ensures the background moves when scrolling */
+}
+
+.bg-local {
+  background-image: url('../pics/CA_Portal.webp');
+}
+
+/* static/css/styles.css */
+.logo-reliance {
+  background-image: url('../pics/sponsor/reliance.png');
+}
+
+.logo-alkyl-amines {
+  background-image: url('../pics/sponsor/alkyl\ amines.png');
+}
+
+.logo-jay-finechem {
+  background-image: url('../pics/sponsor/Jay-chemical.png');
+}
+
+.logo-deepak-nitrite {
+  background-image: url('../pics/sponsor/Deepak\ Nitrite\ Limited.webp');
+}
+/* static/css/professors.css */
+.professor-abraham {
+  background-image: url('../pics/professor/01_Abraham_D_Stroock_azeo.webp');
+}
+
+.professor-sangtae {
+  background-image: url('../pics/professor/02_Prof_Sangtae_Kim_azeo.webp');
+}
+
+.professor-rakesh {
+  background-image: url('../pics/professor/03_Prof_Rakesh_Aggarwal_azeo.webp');
+}
+
+.professor-asit {
+  background-image: url('../pics/professor/Kishor.jpg');
 }
