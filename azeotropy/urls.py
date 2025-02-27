@@ -23,5 +23,9 @@ urlpatterns = [
     path('', include('apps.home.urls')),  # Include home app
     path('header/', views.header, name='header'),
     path('footer/', views.footer, name='footer'),
-
+    path('competitions/', views.competitions, name='competitions'),
+    path('events/', views.events, name='events'),
+    path('workshop/', views.workshop, name='workshop'),
+    path('team/', views.team, name='team'),
+    path('sponsor/', views.sponsor, name='sponsor'),
 ]
