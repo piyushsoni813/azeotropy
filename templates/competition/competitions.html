@@ -1,5 +1,5 @@
 {% include "main/header.html" %}
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,7 @@
 <body>
 <div id="smooth-wrapper">
     <div id="smooth-content">
-        <section id="home" class="grid place-content-center h-screen bg-fixed" style="background-image: url(./Pics/Industry/01-blur.jpg);">
+        <section id="home" class="grid place-content-center h-screen bg-fixed">
               <div class="gap-5 p-0">
                  <div class="grid px-5 pt-5 place-content-center introtext">
                     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
@@ -30,60 +30,61 @@
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-y-16 gap-x-2">
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">CIPHER</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/cipher_24.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl cipher-bg"></div>
                     <div class="blur-element ">A mind-boggling online cryptic hunt based on themes from popular culture.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">Predictioneer</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/predictioneer2.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl predictioneer-bg"></div>
                     <div class="blur-element ">Entrepreneurship competition based on Chemical engineering.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">IDP</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/IDP.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl idp-bg"></div>
                     <div class="blur-element ">Apply theoretical concepts to solve real-life industrial problems.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">Chem-O-Philia</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/chem-o-philia.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl chem-o-philia-bg"></div>
                     <div class="blur-element ">A National level Chemical Engineering Quiz Competition.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">Optimizer</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/optimizer.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl optimizer-bg"></div>
                     <div class="blur-element ">Push your coding skills to the limit and optimize your way to victory</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">Chem-E-Cross</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/chem-e-cross.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl chem-e-cross-bg"></div>
                     <div class="blur-element ">Test your engineering knowledge with this series of crosswords based on engineering concepts.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">AZeoRover</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/azeocube.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl azeorover-bg"></div>
                     <div class="blur-element ">AZeoCube challenges the students to develop a portable water purifier system.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">Safe-Chem</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/affiche.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl safe-chem-bg"></div>
                     <div class="blur-element ">A great opportunity to showcase your cutting-edge research and ideas to a panel of experts and industry leaders.</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
                  <div class="grid lg:row-span-2 rounded-xl gap-5 place-content-stretch py-5 px-10">
                     <div class="blur-element uppercase text-3xl tracking-widest">Predictioneer</div>
-                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl" style="background-image: url(./Pics/Events/predictioneer2.webp)"></div>
+                    <div class="blur-element h-max aspect-square bg-contain bg-center rounded-xl predictioneer-bg"></div>
                     <div class="blur-element ">Dynamic ML to predict water availability in waterbodies</div>
                     <div class="blur-element btn btn-primary w-40 place-self-center mt-5">Read More</div>
                  </div>
               </div>
         </section>
+         {% include "main/footer.html" %}
     </div>
 </div>
 <script  src="{% static 'js/script.js' %}" type="module"></script>
@@ -93,4 +94,3 @@
 </body>
 {% endblock %}
 </html>
-{% include "main/footer.html" %}

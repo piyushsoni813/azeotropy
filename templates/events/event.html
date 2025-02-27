@@ -1,5 +1,5 @@
 {% include "main/header.html" %}
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,7 @@
 <body>
 <div id="smooth-wrapper">
     <div id="smooth-content">
-        <section id="home" class="grid place-content-center h-screen bg-fixed" style="background-image: url(./Pics/Industry/01-blur.jpg);">
+        <section id="home" class="grid place-content-center h-screen bg-fixed">
               <div class="gap-5 p-0">
                  <div class="grid px-5 pt-5 place-content-center introtext">
                     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
@@ -48,8 +48,8 @@
               </svg>
               <h2 data-filter="goo-1" class="size-large end font-1 text-left text-6xl md:text-9xl  instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5">ChemVision Lecture Series</h2>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">ChemVision by Prof.Rakesh Aggarwal</div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-wide blur-element jost">ChemVision by Prof.Rakesh Aggarwal</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch rakesh-bg"></div>
+                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-wide blur-element jost">Prof.Rakesh Aggarwal</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Immerse yourself into lecture series "ChemVision" by AZeotropy. The first speaker in this session is Prof. Rakesh Agrawal. Prof. Rakesh Agrawal is Winthrop E. Stone Distinguished Professor in the Davidson School of Chemical Engineering at Purdue University, Indiana, USA.</p>
                     <br>
@@ -59,8 +59,8 @@
                  </div>
               </div>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">ChemVision by Prof. Rakesh Aggarwal</div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Prof. Rakesh Aggarwal</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch sangtae-bg"></div>
+                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Prof. sangte kim</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Immerse yourself into the lecture series "ChemVision" by AZeotropy. The next speaker in this series is Prof. Sangtae Kim. He is the Jay and Cynthia Ihlenfeld Head (2016-present) and distinguished Professor of Chemical Engineering at Purdue University, Indiana, USA. Discover the journey of translational research from university labs to real-world impact, as Prof. Kim shares personal experiences with deliberate innovation strategies. Learn how to navigate the "valley of death" and bridge academia with commercialization for societal benefit.</p>
                     <br>
@@ -70,7 +70,7 @@
                  </div>
               </div>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">ChemVision by Dr. Asit Kumar Das</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch asit-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Dr. Asit Kumar Das</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Excited for the next ChemVision lecture by AZeotropy! Dr. Asit Kumar Das, head of R&D of the world's largest refinery at Jamnagar, Reliance Industries Limited, the brilliant mind behind over 100 national/international patents and 80 impactful publications, is taking the stage!</p>
@@ -81,7 +81,7 @@
                  </div>
               </div>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">ChemVision by Prof. Abraham Stroock</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch abraham-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Prof. Abraham Stroock</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Excited for the next ChemVision lecture by AZeotropy! Prof. Abraham Stroock, distinguished professor at Cornell University, renowned for his pioneering work in chemical and biomolecular engineering. With a background spanning physics and chemical physics, his research at the Stroock lab focuses on understanding and manipulating dynamic processes at micrometer scales, particularly in the context of plant physiology and synthetic systems inspired by plant functions</p>
@@ -114,7 +114,7 @@
               </svg>
               <h2 data-filter="goo-1" class="size-large end font-1 text-left text-6xl md:text-9xl  instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5">Panel Discussions</h2>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">Chemical Industry 5.0</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch chemical-industry-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">Chemical Industry 5.0</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>We bring you the most awaited panel discussion on the topic "Chemical Industry 4.0: Smart Tech Revolutionizing Efficiency and Sustainability" where you will gain insights about the increasing importance of sustainability in energy, a need for change, how chemical engineers can contribute to it, what research is being conducted and how it resonates with the the industry, and how new technologies like AI/ML, AR/VR etc are being integrated in industries!</p>
@@ -132,9 +132,13 @@
                  </filter>
               </defs>
         </svg>
+        {% include "main/footer.html" %}
     </div>
 </div>
+<script  src="{% static 'js/script.js' %}" type="module"></script>
+<script src="{% static 'js/main.js' %}" type="module"></script>
+<script type="text/javascript" src="{% static 'js/gsap-3.12.5/package/dist/all.js' %}"  ></script>
+<script src="{% static 'js/splitting.min.js' %}" type="module"></script>
 </body>
 {% endblock %}
 </html>
-{% include "main/footer.html" %}

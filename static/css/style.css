@@ -4137,3 +4137,130 @@ section:nth-child(3) {
 .professor-asit {
   background-image: url('../pics/professor/Kishor.jpg');
 }
+
+
+/* competition background images */
+.cipher-bg {
+  background-image: url('../pics/competition/cipher_24.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.predictioneer-bg {
+  background-image: url('../pics/competition/predictioneer2.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.idp-bg {
+  background-image: url('../pics/competition/IDP.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chem-o-philia-bg {
+  background-image: url('../pics/competition/chem-o-philia.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.optimizer-bg {
+  background-image: url('../pics/competition/optimizer.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chem-e-cross-bg {
+  background-image: url('../pics/competition/chem-e-cross.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.azeorover-bg {
+  background-image: url('../pics/competition/azeocube.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.safe-chem-bg {
+  background-image: url('../pics/competition/affiche.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* events background images */
+.rakesh-bg {
+  background-image: url('../pics/events/Rakesh\ Aggarwal.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sangtae-bg {
+  background-image: url('../pics/events/Sangtae\ Kim.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.asit-bg {
+  background-image: url('../pics/events/Asit\ Kumar\ Das.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.abraham-bg {
+  background-image: url('../pics/events/Abraham\ Stroock.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chemical-industry-bg {
+  background-image: url('../pics/events/Chemical\ Industry\ 4.0.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* workshop background images  */
+.matlab-bg {
+  background-image: url('../pics/workshop/MATLAB\ Workshop.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dwsim-bg {
+  background-image: url('../pics/workshop/DWSIM.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.openmodelica-bg {
+  background-image: url('../pics/workshop/OpenModelica\ Workshop.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.openfoam-bg {
+  background-image: url('../pics/workshop/OpenFOAM\ Workshop.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -15,12 +15,12 @@
 {% block content %}
 <body>
     <div id="smooth-wrapper">
-          <div id="smooth-content">
+      <div id="smooth-content">
             <div class="flex flex-col items-center justify-center mt-24">
               <div class="big-shoulders-text text-4xl">Title Sponsors</div>
               <img
                 class="h-72 py-10 bg-contain bg-center"
-                src="./Pics/Logos/reliance.png"
+                src="{% static 'Pics/Logos/reliance.png' %}"
               />
             </div>
     
@@ -28,7 +28,7 @@
               <div class="big-shoulders-text text-4xl">Powered By</div>
               <img
                 class="h-72 py-10 bg-contain bg-center"
-                src="./Pics/Logos/alkyl amines chemicals ltd.png"
+                src="src={% static 'Pics/sponsor/alkyl amines.png' %}"
               />
             </div>
     
@@ -63,7 +63,13 @@
                 src="./Pics/Logos/cistheta_png.png"
               />
             </div>
+            {% include "main/footer.html" %}
+      </div>
+    </div>
+    <script  src="{% static 'js/script.js' %}" type="module"></script>
+    <script src="{% static 'js/main.js' %}" type="module"></script>
+    <script type="text/javascript" src="{% static 'js/gsap-3.12.5/package/dist/all.js' %}"  ></script>
+    <script src="{% static 'js/splitting.min.js' %}" type="module"></script>
 </body>
 {% endblock %}
 </html>
-{% include "main/footer.html" %}

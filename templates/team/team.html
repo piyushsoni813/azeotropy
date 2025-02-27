@@ -14,9 +14,9 @@
 </head>
 {% block content %}
 <body>
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-           <section id="home" class="grid place-content-center h-screen bg-fixed" style="background-image: url(./Pics/Industry/01-blur.jpg);">
+<div id="smooth-wrapper">
+   <div id="smooth-content">
+      <section id="home" class="grid place-content-center h-screen bg-fixed">
               <div class="gap-5 p-0">
                  <div class="grid px-5 pt-5 place-content-center introtext">
                     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
@@ -25,8 +25,14 @@
                  </div>
                  <div class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black big-shoulders-text tracking-tighter introtext break-normal uppercase text-white">Meet Our Team</div>
               </div>
-           </section>
+      </section>
+      {% include "main/footer.html" %}
+   </div>
+</div>
+<script  src="{% static 'js/script.js' %}" type="module"></script>
+<script src="{% static 'js/main.js' %}" type="module"></script>
+<script type="text/javascript" src="{% static 'js/gsap-3.12.5/package/dist/all.js' %}"  ></script>
+<script src="{% static 'js/splitting.min.js' %}" type="module"></script>
 </body>
 {% endblock %}
 </html>
-{% include "main/footer.html" %}

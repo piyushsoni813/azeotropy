@@ -1,5 +1,5 @@
 {% include "main/header.html" %}
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,7 @@
 <body>
 <div id="smooth-wrapper">
     <div id="smooth-content">
-        <section id="home" class="grid place-content-center h-screen bg-fixed" style="background-image: url(./Pics/Industry/01-blur.jpg);">
+        <section id="home" class="grid place-content-center h-screen bg-fixed">
               <div class="gap-5 p-0">
                  <div class="grid px-5 pt-5 place-content-center introtext">
                     <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
@@ -48,7 +48,7 @@
               </svg>
               <h2 data-filter="goo-1" class="size-large end font-1 text-left text-6xl md:text-9xl  instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5">Online Workshops</h2>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">MATLAB Workshop</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch matlab-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">MATLAB Workshop</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Matlab is a numerical computing software that is widely used in chemical engineering for modeling, simulation, and data analysis. It offers a range of built-in functions, toolboxes, and graphical user interfaces for solving complex mathematical problems and building graphical user interfaces. P.S. : Certificates will be provided to all the participants</p>
@@ -79,7 +79,7 @@
               </svg>
               <h2 data-filter="goo-1" class="size-large end font-1 text-left text-6xl md:text-9xl  instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5">Offline Workshops</h2>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">DWSIM Workshop</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch dwsim-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">DWSIM Workshop</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch">DWSIM is a process simulation software that is used in chemical engineering for the design and analysis of chemical processes. It offers a range of features, including thermodynamic models, unit operations, and process simulation tools. It also supports the integration of external code and the creation of custom models.</p>
@@ -88,7 +88,7 @@
                  </div>
               </div>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">OpenModelica Workshop</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch openmodelica-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">OpenModelica Workshop</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch">OpenModelica is an open-source modeling and simulation software that is used in chemical engineering for the design and optimization of complex systems. It offers a range of modeling languages and simulation tools for dynamic systems, including differential equations, algebraic equations, and discrete events.</p>
@@ -97,7 +97,7 @@
                  </div>
               </div>
               <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch">OpenFOAM Workshop</div>
+                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch openfoam-bg"></div>
                  <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">OpenFOAM Workshop</div>
                  <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
                     <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch">OpenFOAM (Open Field Operation and Manipulation) is a free, open-source computational fluid dynamics software that is used in chemical engineering for the simulation of fluid flow and heat transfer. It offers a range of numerical methods and models for the simulation of complex fluid dynamics problems, including turbulence, combustion, and multiphase flow.</p>
@@ -113,9 +113,13 @@
                  </filter>
               </defs>
         </svg>
+        {% include "main/footer.html" %}
     </div>
 </div>
+<script  src="{% static 'js/script.js' %}" type="module"></script>
+<script src="{% static 'js/main.js' %}" type="module"></script>
+<script type="text/javascript" src="{% static 'js/gsap-3.12.5/package/dist/all.js' %}"  ></script>
+<script src="{% static 'js/splitting.min.js' %}" type="module"></script>
 </body>
 {% endblock %}
 </html>
-{% include "main/footer.html" %}
