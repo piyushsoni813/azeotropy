@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from apps.home import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +30,4 @@ urlpatterns = [
     path('workshop/', views.workshop, name='workshop'),
     path('team/', views.team, name='team'),
     path('sponsor/', views.sponsor, name='sponsor'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
