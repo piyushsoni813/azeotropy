@@ -1,5 +1,5 @@
 {% include "main/header.html" %}
-{%load static%}
+<!-- {%load static%} -->
 <!DOCTYPE html>
 <html lang="en" data-theme="lemonade">
 <html lang="en">
@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Ballet:opsz@16..72&family=Big+Shoulders+Text:wght@100..900&family=Doto:wght@100..900&family=Erica+One&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend+Tera:wght@100..900&family=Rubik+Glitch&family=Silkscreen:wght@400;700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+
+
+
 </head>
 {% block content %}
 <body>
@@ -164,13 +167,11 @@
         </section>
       </div>
    </div>
-{% block scripts %}
-   <script src="{% static 'js/script.js' %}"></script>
-   <script src="{% static 'js/main.js' %}"></script>
-   <!-- <script src="{% static 'js/debug-borders.js' %}"></script> -->
-   <script src="{% static 'js/all.js' %}"></script>
-   <script src="{% static 'js/splitting.min.js' %}"></script>
-{% endblock scripts %}
+
+     <script  src="{% static 'js/script.js' %}" type="module"></script>
+    <script src="{% static 'js/main.js' %}" type="module"></script>
+    <script type="text/javascript" src="{% static 'js/gsap-3.12.5/package/dist/all.js' %}"  ></script>
+    <script src="{% static 'js/splitting.min.js' %}" type="module"></script>
 </body>
 {% endblock %}
 </html>
