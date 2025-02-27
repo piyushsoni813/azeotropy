@@ -23,3 +23,6 @@ def team(request):
 
 def sponsor(request):
     return render(request, 'sponsors/sponsor.html')  # Use relative path
+
+def schedule(request):
+    return render(request, 'main/schedule.html')  # Use relative path

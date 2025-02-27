@@ -30,4 +30,5 @@ urlpatterns = [
     path('workshop/', views.workshop, name='workshop'),
     path('team/', views.team, name='team'),
     path('sponsor/', views.sponsor, name='sponsor'),
+    path('schedule/', views.schedule, name='schedule'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
