@@ -16,114 +16,710 @@
 <body>
 <div id="smooth-wrapper">
     <div id="smooth-content">
-        <section id="home" class="grid place-content-center h-screen bg-fixed">
-              <div class="gap-5 p-0">
-                 <div class="grid px-5 pt-5 place-content-center introtext">
-                    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 192" fill-rule="evenodd" clip-rule="evenodd" class=" fill-white azeoLogo">
-                       <path d="M77.705 96H147V8m5 131v48h143l-26-32h-83l47-47-19-24h-62l29 24m-34-7H73.765l-6.356 8H147m-89.791 13H147v-8H63.469M6 187h141v-60H53.269" />
-                    </svg>
-                 </div>
-                 <div class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black big-shoulders-text tracking-tighter introtext break-normal uppercase text-white">Events</div>
-              </div>
+      <section
+          id="home"
+          class="grid place-content-center h-screen bg-local bg-cover"
+        >
+          <div class="gap-5 p-0">
+            <div class="grid px-5 pt-5 place-content-center introtext">
+              <svg
+                width="200"
+                height="200"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 300 192"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                class="fill-white azeoLogo"
+              >
+                <path
+                  d="M77.705 96H147V8m5 131v48h143l-26-32h-83l47-47-19-24h-62l29 24m-34-7H73.765l-6.356 8H147m-89.791 13H147v-8H63.469M6 187h141v-60H53.269"
+                />
+              </svg>
+            </div>
+            <div
+              class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black big-shoulders-text tracking-tighter introtext break-normal uppercase text-white"
+            >
+              Events
+            </div>
+          </div>
         </section>
-        <svg style="position: absolute; width: 0; height: 0;">
-              <defs>
-                 <filter id="blurFilter">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur>
-                 </filter>
-              </defs>
+        <svg style="position: absolute; width: 0; height: 0">
+          <defs>
+            <filter id="blurFilter">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur>
+            </filter>
+          </defs>
         </svg>
         <section id="about" class="py-32 lg:mx-28">
-              <svg class="hidden">
-                 <defs>
-                    <filter id="goo-1">
-                       <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"></feGaussianBlur>
-                       <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  
-                          0 1 0 0 0  
-                          1 0 1 0 0  
-                          0 0 0 13 -6" result="goo"></feColorMatrix>
-                       <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-                    </filter>
-                 </defs>
-              </svg>
-              <h2 data-filter="goo-1" class="size-large end font-1 text-left text-6xl md:text-9xl  instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5">ChemVision Lecture Series</h2>
-              <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch rakesh-bg"></div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-wide blur-element jost">Prof.Rakesh Aggarwal</div>
-                 <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
-                    <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Immerse yourself into lecture series "ChemVision" by AZeotropy. The first speaker in this session is Prof. Rakesh Agrawal. Prof. Rakesh Agrawal is Winthrop E. Stone Distinguished Professor in the Davidson School of Chemical Engineering at Purdue University, Indiana, USA.</p>
-                    <br>
-                    <p class="text-base leading-relaxed mb-4 blur-element  place-self-stretch" data-splitting data-effect8>He will discuss on an interesting topic "A Sustainable Energy Future – A Case for a Solar Economy" where he will discuss the transition to a sustainable solar economy. Explore challenges, interdisciplinary solutions, and the exciting potential of solar cells. Embrace the journey towards a renewable future.</p>
-                    <br>
-                    <button class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular">Read More</button>
-                 </div>
-              </div>
-              <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch sangtae-bg"></div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Prof. sangte kim</div>
-                 <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
-                    <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Immerse yourself into the lecture series "ChemVision" by AZeotropy. The next speaker in this series is Prof. Sangtae Kim. He is the Jay and Cynthia Ihlenfeld Head (2016-present) and distinguished Professor of Chemical Engineering at Purdue University, Indiana, USA. Discover the journey of translational research from university labs to real-world impact, as Prof. Kim shares personal experiences with deliberate innovation strategies. Learn how to navigate the "valley of death" and bridge academia with commercialization for societal benefit.</p>
-                    <br>
-                    <p class="text-base leading-relaxed mb-4 blur-element  place-self-stretch" data-splitting data-effect8>Don't miss out on this opportunity to explore the application of the "trillion-dollar equation" to entrepreneurial teams, alongside exciting R&D projects like transforming shale gases and designing small molecule therapeutics.</p>
-                    <br>
-                    <button class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular">Read More</button>
-                 </div>
-              </div>
-              <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch asit-bg"></div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Dr. Asit Kumar Das</div>
-                 <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
-                    <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Excited for the next ChemVision lecture by AZeotropy! Dr. Asit Kumar Das, head of R&D of the world's largest refinery at Jamnagar, Reliance Industries Limited, the brilliant mind behind over 100 national/international patents and 80 impactful publications, is taking the stage!</p>
-                    <br>
-                    <p class="text-base leading-relaxed mb-4 blur-element  place-self-stretch" data-splitting data-effect8>He'll delve into the captivating theme "Developed India: An Image of India’s Future in Energy & Chemicals" where he will discuss about India's path towards becoming a leader in Energy & Chemicals, aiming for self-sufficiency and sustainability. With a booming economy and ambitious goals, India is poised to drive significant growth in the energy and chemical sectors, embracing renewable energy and innovative technologies. Join the journey towards sustainable development and innovation in the chemical industry.</p>
-                    <br>
-                    <button class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular">Read More</button>
-                 </div>
-              </div>
-              <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch abraham-bg"></div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">ChemVision by Prof. Abraham Stroock</div>
-                 <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
-                    <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>Excited for the next ChemVision lecture by AZeotropy! Prof. Abraham Stroock, distinguished professor at Cornell University, renowned for his pioneering work in chemical and biomolecular engineering. With a background spanning physics and chemical physics, his research at the Stroock lab focuses on understanding and manipulating dynamic processes at micrometer scales, particularly in the context of plant physiology and synthetic systems inspired by plant functions</p>
-                    <br>
-                    <p class="text-base leading-relaxed mb-4 blur-element  place-self-stretch" data-splitting data-effect8>He'll delve into the captivating topic "The lungs of our planet - engineering analyses plant leaf function" he will discusses how plants manage exchanges between Earth and the atmosphere, focusing on the balance between carbon assimilation and water transpiration. He introduces AquaDust, a nanotechnology from his lab, revealing insights into leaf transport processes and a mechanism enhancing water-use efficiency.</p>
-                    <br>
-                    <button class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular">Read More</button>
-                 </div>
-              </div>
+          <svg class="hidden">
+            <defs>
+              <filter id="goo-1">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="0"
+                  result="blur"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  
+                           0 1 0 0 0  
+                           1 0 1 0 0  
+                           0 0 0 13 -6"
+                  result="goo"
+                ></feColorMatrix>
+                <feComposite
+                  in="SourceGraphic"
+                  in2="goo"
+                  operator="atop"
+                ></feComposite>
+              </filter>
+            </defs>
+          </svg>
+          <h2
+            data-filter="goo-1"
+            class="size-large end font-1 text-left text-6xl md:text-9xl instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5"
+          >
+            ChemVision Lecture Series
+          </h2>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch"
+          >
+            <!-- Prof. Rakesh Aggarwal -->
+            <div
+              class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch"
+            >
+              <div
+                class="h-max aspect-square bg-contain bg-center rounded-xl rakesh-bg"
+              ></div>
+            </div>
+            <div
+              class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-wide blur-element jost"
+            >
+              ChemVision by Prof. Rakesh Aggarwal
+            </div>
+            <div
+              class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch"
+            >
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                Immerse yourself into lecture series "ChemVision" by AZeotropy. The
+                first speaker in this session is Prof. Rakesh Agrawal. Prof. Rakesh
+                Agrawal is Winthrop E. Stone Distinguished Professor in the
+                Davidson School of Chemical Engineering at Purdue University,
+                Indiana, USA.
+              </p>
+              <br />
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                He will discuss on an interesting topic "A Sustainable Energy Future
+                – A Case for a Solar Economy" where he will discuss the transition
+                to a sustainable solar economy. Explore challenges,
+                interdisciplinary solutions, and the exciting potential of solar
+                cells. Embrace the journey towards a renewable future.
+              </p>
+              <br />
+              <button
+                class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular"
+                onclick="my_modal_1.showModal()"
+              >
+                Read More
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <h3 class="text-lg font-bold">ChemVision by Prof. Rakesh Aggarwal</h3>
+                  <p class="py-4"></p>
+                  <div role="tablist" class="tabs tabs-lifted">
+                    <input
+                      type="radio"
+                      name="tabs_1"
+                      role="tab"
+                      class="tab"
+                      aria-label="About"
+                      checked
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>
+                          Immerse yourself into lecture series "ChemVision" by
+                          AZeotropy. The first speaker in this session is Prof.
+                          Rakesh Agrawal, Winthrop E. Stone Distinguished Professor
+                          in the Davidson School of Chemical Engineering at Purdue
+                          University, Indiana, USA.
+                        </li>
+                        <li>
+                          Topic: "A Sustainable Energy Future – A Case for a Solar
+                          Economy" - Discussing the transition to a sustainable
+                          solar economy, challenges, interdisciplinary solutions,
+                          and the potential of solar cells.
+                        </li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_1"
+                      role="tab"
+                      class="tab"
+                      aria-label="Event Details"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Date: [Add event date]</li>
+                        <li>Time: [Add event time]</li>
+                        <li>Location: [Add event location or "Online"]</li>
+                        <li>Duration: [Add duration, e.g., 1 hour]</li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_1"
+                      role="tab"
+                      class="tab"
+                      aria-label="Contact"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Contact details coming soon!</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+    
+            <!-- Prof. Sangtae Kim -->
+            <div
+              class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch"
+            >
+              <div
+                class="h-max aspect-square bg-contain bg-center rounded-xl sangtae-bg"
+              ></div>
+            </div>
+            <div
+              class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost"
+            >
+              ChemVision by Prof. Sangtae Kim
+            </div>
+            <div
+              class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch"
+            >
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                Immerse yourself into the lecture series "ChemVision" by AZeotropy.
+                The next speaker in this series is Prof. Sangtae Kim. He is the Jay
+                and Cynthia Ihlenfeld Head (2016-present) and distinguished
+                Professor of Chemical Engineering at Purdue University, Indiana,
+                USA.
+              </p>
+              <br />
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                Discover the journey of translational research from university labs
+                to real-world impact, as Prof. Kim shares personal experiences with
+                deliberate innovation strategies. Learn how to navigate the "valley
+                of death" and bridge academia with commercialization for societal
+                benefit.
+              </p>
+              <br />
+              <button
+                class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular"
+                onclick="my_modal_2.showModal()"
+              >
+                Read More
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <h3 class="text-lg font-bold">ChemVision by Prof. Sangtae Kim</h3>
+                  <p class="py-4"></p>
+                  <div role="tablist" class="tabs tabs-lifted">
+                    <input
+                      type="radio"
+                      name="tabs_2"
+                      role="tab"
+                      class="tab"
+                      aria-label="About"
+                      checked
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>
+                          Prof. Sangtae Kim, Jay and Cynthia Ihlenfeld Head and
+                          distinguished Professor of Chemical Engineering at Purdue
+                          University, Indiana, USA.
+                        </li>
+                        <li>
+                          Topic: Translational research from university labs to
+                          real-world impact, navigating the "valley of death", and
+                          bridging academia with commercialization.
+                        </li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_2"
+                      role="tab"
+                      class="tab"
+                      aria-label="Event Details"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Date: [Add event date]</li>
+                        <li>Time: [Add event time]</li>
+                        <li>Location: [Add event location or "Online"]</li>
+                        <li>Duration: [Add duration, e.g., 1 hour]</li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_2"
+                      role="tab"
+                      class="tab"
+                      aria-label="Contact"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Contact details coming soon!</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+    
+            <!-- Dr. Asit Kumar Das -->
+            <div
+              class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch"
+            >
+              <div
+                class="h-max aspect-square bg-contain bg-center rounded-xl asit-bg"
+              ></div>
+            </div>
+            <div
+              class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost"
+            >
+              ChemVision by Dr. Asit Kumar Das
+            </div>
+            <div
+              class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch"
+            >
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                Excited for the next ChemVision lecture by AZeotropy! Dr. Asit Kumar
+                Das, head of R&D of the world's largest refinery at Jamnagar,
+                Reliance Industries Limited, the brilliant mind behind over 100
+                national/international patents and 80 impactful publications.
+              </p>
+              <br />
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                He'll delve into the captivating theme "Developed India: An Image of
+                India’s Future in Energy & Chemicals" discussing India's path
+                towards becoming a leader in Energy & Chemicals, aiming for
+                self-sufficiency and sustainability.
+              </p>
+              <br />
+              <button
+                class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular"
+                onclick="my_modal_3.showModal()"
+              >
+                Read More
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <h3 class="text-lg font-bold">ChemVision by Dr. Asit Kumar Das</h3>
+                  <p class="py-4"></p>
+                  <div role="tablist" class="tabs tabs-lifted">
+                    <input
+                      type="radio"
+                      name="tabs_3"
+                      role="tab"
+                      class="tab"
+                      aria-label="About"
+                      checked
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>
+                          Dr. Asit Kumar Das, head of R&D at Reliance Industries
+                          Limited, Jamnagar, with over 100 patents and 80
+                          publications.
+                        </li>
+                        <li>
+                          Topic: "Developed India: An Image of India’s Future in
+                          Energy & Chemicals" - India’s path to leadership in energy
+                          and chemicals, focusing on self-sufficiency and
+                          sustainability.
+                        </li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_3"
+                      role="tab"
+                      class="tab"
+                      aria-label="Event Details"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Date: [Add event date]</li>
+                        <li>Time: [Add event time]</li>
+                        <li>Location: [Add event location or "Online"]</li>
+                        <li>Duration: [Add duration, e.g., 1 hour]</li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_3"
+                      role="tab"
+                      class="tab"
+                      aria-label="Contact"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Contact details coming soon!</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+    
+            <!-- Prof. Abraham Stroock -->
+            <div
+              class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch"
+            >
+              <div
+                class="h-max aspect-square bg-contain bg-center rounded-xl abraham-bg"
+              ></div>
+            </div>
+            <div
+              class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost"
+            >
+              ChemVision by Prof. Abraham Stroock
+            </div>
+            <div
+              class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch"
+            >
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                Excited for the next ChemVision lecture by AZeotropy! Prof. Abraham
+                Stroock, distinguished professor at Cornell University, renowned
+                for his pioneering work in chemical and biomolecular engineering.
+              </p>
+              <br />
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                He'll delve into the captivating topic "The lungs of our planet -
+                engineering analyses plant leaf function" discussing how plants
+                manage exchanges between Earth and the atmosphere.
+              </p>
+              <br />
+              <button
+                class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular"
+                onclick="my_modal_4.showModal()"
+              >
+                Read More
+              </button>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <h3 class="text-lg font-bold">ChemVision by Prof. Abraham Stroock</h3>
+                  <p class="py-4"></p>
+                  <div role="tablist" class="tabs tabs-lifted">
+                    <input
+                      type="radio"
+                      name="tabs_4"
+                      role="tab"
+                      class="tab"
+                      aria-label="About"
+                      checked
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>
+                          Prof. Abraham Stroock, distinguished professor at Cornell
+                          University, known for work in chemical and biomolecular
+                          engineering.
+                        </li>
+                        <li>
+                          Topic: "The lungs of our planet - engineering analyses
+                          plant leaf function" - How plants manage Earth-atmosphere
+                          exchanges, featuring AquaDust nanotechnology.
+                        </li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_4"
+                      role="tab"
+                      class="tab"
+                      aria-label="Event Details"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Date: [Add event date]</li>
+                        <li>Time: [Add event time]</li>
+                        <li>Location: [Add event location or "Online"]</li>
+                        <li>Duration: [Add duration, e.g., 1 hour]</li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_4"
+                      role="tab"
+                      class="tab"
+                      aria-label="Contact"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Contact details coming soon!</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
         </section>
-        <svg style="position: absolute; width: 0; height: 0;">
-              <defs>
-                 <filter id="blurFilter">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur>
-                 </filter>
-              </defs>
+        <svg style="position: absolute; width: 0; height: 0">
+          <defs>
+            <filter id="blurFilter">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur>
+            </filter>
+          </defs>
         </svg>
-        <section id="about" class="py-32 lg:mx-28">
-              <svg class="hidden">
-                 <defs>
-                    <filter id="goo-1">
-                       <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"></feGaussianBlur>
-                       <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  
-                          0 1 0 0 0  
-                          1 0 1 0 0  
-                          0 0 0 13 -6" result="goo"></feColorMatrix>
-                       <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-                    </filter>
-                 </defs>
-              </svg>
-              <h2 data-filter="goo-1" class="size-large end font-1 text-left text-6xl md:text-9xl  instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5">Panel Discussions</h2>
-              <div class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch">
-                 <div class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch chemical-industry-bg"></div>
-                 <div class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost">Chemical Industry 5.0</div>
-                 <div class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch">
-                    <p class="text-base leading-relaxed mb-4 blur-element place-self-stretch" data-splitting data-effect8>We bring you the most awaited panel discussion on the topic "Chemical Industry 4.0: Smart Tech Revolutionizing Efficiency and Sustainability" where you will gain insights about the increasing importance of sustainability in energy, a need for change, how chemical engineers can contribute to it, what research is being conducted and how it resonates with the the industry, and how new technologies like AI/ML, AR/VR etc are being integrated in industries!</p>
-                    <br>
-                    <p class="text-base leading-relaxed mb-4 blur-element  place-self-stretch" data-splitting data-effect8>Joining the panel are Dr. Kishor Dongaonkar, Vice Precident, Reliance Industries; Mithu Saha, Energy Transition Manager, Worley; Subhash Dhar, President (Technology), Deepak Nitrite Limited; Prof. Mani Bhushan, Professor at IIT Bombay who have a varied and high experience in the chemical industry.</p>
-                    <br>
-                    <button class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular">Read More</button>
-                 </div>
-              </div>
+        <section id="about" class="py-32 lg:px-28 bg-base-300">
+          <svg class="hidden">
+            <defs>
+              <filter id="goo-1">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="0"
+                  result="blur"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  
+                           0 1 0 0 0  
+                           1 0 1 0 0  
+                           0 0 0 13 -6"
+                  result="goo"
+                ></feColorMatrix>
+                <feComposite
+                  in="SourceGraphic"
+                  in2="goo"
+                  operator="atop"
+                ></feComposite>
+              </filter>
+            </defs>
+          </svg>
+          <h2
+            data-filter="goo-1"
+            class="size-large end font-1 text-left text-6xl md:text-9xl instrument-serif-regular tracking-tight mb-20 blur-element subpixel-antialiased md:px-5"
+          >
+            Panel Discussions
+          </h2>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 mb-12 mx-5 gap-5 place-items-stretch"
+          >
+            <!-- Chemical Industry 5.0 -->
+            <div
+              class="lg:row-span-2 rounded-xl blur-element border border-white aspect-square w-auto place-self-stretch"
+            >
+              <div
+                class="h-max aspect-square bg-contain bg-center rounded-xl chemical-industry-bg"
+              ></div>
+            </div>
+            <div
+              class="lg:col-span-2 text-left text-2xl md:text-3xl tracking-tight blur-element jost"
+            >
+              Chemical Industry 5.0
+            </div>
+            <div
+              class="lg:col-span-2 text-justify blur-element font-semibold place-items-stretch"
+            >
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                We bring you the most awaited panel discussion on the topic
+                "Chemical Industry 4.0: Smart Tech Revolutionizing Efficiency and
+                Sustainability" where you will gain insights about the increasing
+                importance of sustainability in energy.
+              </p>
+              <br />
+              <p
+                class="text-base leading-relaxed mb-4 blur-element place-self-stretch"
+                data-splitting
+                data-effect8
+              >
+                Joining the panel are Dr. Kishor Dongaonkar, Vice President, Reliance
+                Industries; Mithu Saha, Energy Transition Manager, Worley; Subhash
+                Dhar, President (Technology), Deepak Nitrite Limited; Prof. Mani
+                Bhushan, Professor at IIT Bombay.
+              </p>
+              <br />
+              <button
+                class="btn mx-3 px-10 btn-accent text-base leading-relaxed mb-4 blur-element place-self-stretch silkscreen-regular"
+                onclick="my_modal_5.showModal()"
+              >
+                Read More
+              </button>
+              <dialog id="my_modal_5" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <h3 class="text-lg font-bold">Chemical Industry 5.0</h3>
+                  <p class="py-4"></p>
+                  <div role="tablist" class="tabs tabs-lifted">
+                    <input
+                      type="radio"
+                      name="tabs_5"
+                      role="tab"
+                      class="tab"
+                      aria-label="About"
+                      checked
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>
+                          Topic: "Chemical Industry 4.0: Smart Tech Revolutionizing
+                          Efficiency and Sustainability" - Insights on
+                          sustainability in energy, new technologies like AI/ML,
+                          AR/VR, and their integration in industries.
+                        </li>
+                        <li>
+                          Panelists: Dr. Kishor Dongaonkar (Reliance Industries),
+                          Mithu Saha (Worley), Subhash Dhar (Deepak Nitrite Limited),
+                          Prof. Mani Bhushan (IIT Bombay).
+                        </li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_5"
+                      role="tab"
+                      class="tab"
+                      aria-label="Event Details"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Date: [Add event date]</li>
+                        <li>Time: [Add event time]</li>
+                        <li>Location: [Add event location or "Online"]</li>
+                        <li>Duration: [Add duration, e.g., 1.5 hours]</li>
+                      </ul>
+                    </div>
+                    <input
+                      type="radio"
+                      name="tabs_5"
+                      role="tab"
+                      class="tab"
+                      aria-label="Contact"
+                    />
+                    <div
+                      role="tabpanel"
+                      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+                    >
+                      <ul>
+                        <li>Contact details coming soon!</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
         </section>
         <svg style="position: absolute; width: 0; height: 0;">
               <defs>
