@@ -31,4 +31,5 @@ urlpatterns = [
     path('team/', views.team, name='team'),
     path('sponsor/', views.sponsor, name='sponsor'),
     path('schedule/', views.schedule, name='schedule'),
+    path('azeoid/', include('apps.azeoid.urls')),  # Include azeoid app
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

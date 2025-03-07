@@ -1,23 +1,35 @@
+import random
+import string
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
-from .models import AzeoProfile
+from .models import StudentRegistration
 
-class UserRegistrationForm(UserCreationForm):
-    email = forms.EmailField(required=True)
-    first_name = forms.CharField(required=True)
-    last_name = forms.CharField(required=True)
-
+class RegistrationForm(forms.ModelForm):
     class Meta:
-        model = User
-        fields = ['username', 'email', 'first_name', 'last_name', 'password1', 'password2']
+        model = StudentRegistration
+        fields = ['name', 'college_name', 'year_of_study', 'phone_number', 'email']
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'college_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'year_of_study': forms.TextInput(attrs={'class': 'form-control'}),
+            'phone_number': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+        }
 
-class AzeoProfileForm(forms.ModelForm):
-    class Meta:
-        model = AzeoProfile
-        fields = ['college', 'department', 'year_of_study', 'phone']
+    def generate_azeoid(self):
+        # Take first 3 letters of name (upper case) and year of study
+        name_part = self.cleaned_data['name'][:3].upper()
+        year_part = self.cleaned_data['year_of_study']
+        random_part = ''.join(random.choices(string.ascii_uppercase + string.digits, k=4))
+        return f"AZEO-{name_part}{year_part}-{random_part}"
 
-class ProfileUpdateForm(forms.ModelForm):
-    class Meta:
-        model = AzeoProfile
-        fields = ['college', 'department', 'year_of_study', 'phone']
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        if not instance.azeoid:
+            while True:
+                new_id = self.generate_azeoid()
+                if not StudentRegistration.objects.filter(azeoid=new_id).exists():
+                    instance.azeoid = new_id
+                    break
+        if commit:
+            instance.save()
+        return instance

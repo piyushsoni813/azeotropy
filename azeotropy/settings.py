@@ -54,6 +54,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'azeotropy2025@gmail.com'
+EMAIL_HOST_PASSWORD = 'wlas xwig nroe rjto'
+EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 ROOT_URLCONF = 'azeotropy.urls'
 
 TEMPLATES = [
